@@ -8,6 +8,7 @@ import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.udpp2p.message.MessageType;
 import com.example.udpp2p.message.SUPERPEERJSON_REQUESTMessage;
 
 import java.io.IOException;

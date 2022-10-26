@@ -22,6 +22,7 @@ import com.example.udpp2p.STUN.STUN_Result;
 import com.example.udpp2p.message.ACKMessage;
 import com.example.udpp2p.message.BaseMessage;
 import com.example.udpp2p.message.EXCHANGEMessage;
+import com.example.udpp2p.message.MessageType;
 import com.example.udpp2p.message.SUPERPEERJSON_REQUESTMessage;
 import com.example.udpp2p.message.SUPERPEERJSON_RESPONSEMessage;
 import com.example.udpp2p.message.TEXTMessageNOACK;

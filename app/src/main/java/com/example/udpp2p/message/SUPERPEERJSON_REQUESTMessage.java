@@ -1,6 +1,5 @@
 package com.example.udpp2p.message;
 
-import com.example.udpp2p.MessageType;
 import com.example.udpp2p.STUN.STUN_NetType;
 
 import org.json.JSONException;

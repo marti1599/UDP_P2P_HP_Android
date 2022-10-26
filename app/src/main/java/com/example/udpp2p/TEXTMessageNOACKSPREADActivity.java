@@ -7,10 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
-import com.example.udpp2p.BackgroundService;
-import com.example.udpp2p.MessageType;
-import com.example.udpp2p.Peer;
-import com.example.udpp2p.R;
+import com.example.udpp2p.message.MessageType;
 import com.example.udpp2p.message.TEXTMessageNOACKSPREAD;
 
 import java.io.IOException;

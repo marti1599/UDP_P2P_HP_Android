@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.udpp2p.STUN.STUN_NetType;
 import com.example.udpp2p.message.EXCHANGEMessage;
+import com.example.udpp2p.message.MessageType;
 
 import java.io.IOException;
 import java.net.DatagramPacket;

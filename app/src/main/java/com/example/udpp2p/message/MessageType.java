@@ -1,4 +1,4 @@
-package com.example.udpp2p;
+package com.example.udpp2p.message;
 
 public enum MessageType {
    /**

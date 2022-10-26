@@ -1,7 +1,5 @@
 package com.example.udpp2p.message;
 
-import com.example.udpp2p.MessageType;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 

@@ -9,10 +9,7 @@ import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.udpp2p.BackgroundService;
-import com.example.udpp2p.MessageType;
-import com.example.udpp2p.Peer;
-import com.example.udpp2p.R;
+import com.example.udpp2p.message.MessageType;
 import com.example.udpp2p.message.TEXTMessageNOACK;
 
 import java.io.IOException;
