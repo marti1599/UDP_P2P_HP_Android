@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextView_Port"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:text="Port:"/>
+
+            <EditText
+                android:id="@+id/EditText_PortValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="12356"/>
+
+            <Button
+                android:id="@+id/Button_StartReceive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Start Receive"
+                android:onClick="BtnStartReceive"/>
+
+            <Button
+                android:id="@+id/Button_StopReceive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Stop Receive"
+                android:onClick="BtnStopReceive"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.4"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextView_LocalIP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:text="Local IP:"/>
+
+            <EditText
+                android:id="@+id/EditText_LocalIPValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="10dp"
+                android:layout_weight="1"
+                android:text="192.168.0.110"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TextView_LocalPort"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:text="Local Port:"/>
+
+                <EditText
+                    android:id="@+id/EditText_LocalPortValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="10dp"
+                    android:layout_weight="1"
+                    android:text="12356"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3.4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextView_RemoteIP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:text="Remote IP:"/>
+
+            <EditText
+                android:id="@+id/EditText_RemoteIPValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="10dp"
+                android:layout_weight="1"
+                android:text="192.168.0.110"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TextView_RemotePort"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:text="Remote Port:"/>
+
+                <EditText
+                    android:id="@+id/EditText_RemotePortValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="10dp"
+                    android:layout_weight="1"
+                    android:text="12356"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/Button_StartSend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.6"
+            android:text="Start Send"
+            android:onClick="BtnStartSend"/>
+
+        <Button
+            android:id="@+id/Button_StopSend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.6"
+            android:text="Stop Send"
+            android:onClick="BtnStopSend"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.6"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/EditText_ScanIPValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="IP"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:onClick="BtnStartScanPort"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scrollbars="vertical">
+
+                <TextView
+                    android:id="@+id/TextView_LogReceivedMessages"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:inputType="textMultiLine" />
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3.6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/TextView_STUNNetType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:text="NetType:"/>
+
+            <TextView
+                android:id="@+id/TextView_STUNLocalIP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1.1"
+                android:textSize="10dp"
+                android:text="Local IP:"/>
+
+            <TextView
+                android:id="@+id/TextView_STUNPublicIP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1.1"
+                android:textSize="10dp"
+                android:text="Public IP:"/>
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/TextView_STUNNetType_Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    android:text=""/>
+
+                <TextView
+                    android:id="@+id/TextView_STUNLocalIP_Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1.1"
+                    android:textSize="10dp"
+                    android:text=""/>
+
+                <TextView
+                    android:id="@+id/TextView_STUNPublicIP_Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1.1"
+                    android:textSize="10dp"
+                    android:text=""/>
+
+            </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

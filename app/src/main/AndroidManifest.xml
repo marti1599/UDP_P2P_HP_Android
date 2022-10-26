@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.udpp2p">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UDPP2P">
+        <activity
+            android:name=".TEXTMessageNOACKSPREADActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TextMessageNOACKActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SuperPeerJsonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExchangeActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".BackgroundService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TestActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>
